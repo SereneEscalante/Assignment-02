@@ -6,10 +6,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>TechWave</title>
 </head>
-<body>
+<body class="bg-[#0b0220] text-white overflow-x-hidden">
+
     <!-- navigation bar -->
-    <nav class="top-0 w-full border-t">
-        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <nav class="top-0 w-full z-50 bg-gradient-to-r from-[#1a0536] via-[#12032a] to-[#1a0536] border-b border-white/10">
+
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-3">
 
             <!-- techwave -->
             <h1 class="text-2xl font-extrabold">Tech
@@ -29,9 +31,42 @@
             </ul>
 
             <!-- rightt er subscribe -->
-            <a href="" class="bg-gradient-to-r from-yellow-500 via-pink-500 to purple 500 font-bold px-5 py-2 rounded-full max-[576px]:hidden">Subscribe →</a>
+            <a href="" class="lg:bg-gradient-to-r from-yellow-500 via-pink-500 to purple 500 font-bold px-5 py-2 rounded-full max-[576px]:hidden">Subscribe →</a>
         </div>
     </nav>
+
+
+    <!-- image addition part -->
+    <section class="relative min-h-screen text-center pt-24 overflow-hidden">
+
+        <!-- bgimage -->
+        <div class="absolute inset-0 opacity-60">
+            <img class="w-full h-full object-cover" src="./assets/hero-bg.png" alt="">
+        </div>
+
+        <!-- golla r microphone habijabi -->
+        <div class="relative z-10 flex flex-col items-center">
+
+            <!-- circle e creation -->
+            <div class="relative mb-8 group">
+                <div class="absolute inset-0 bg-pink-600 rounded-full blur-3xl opacity-20"></div>
+
+                <!-- circle creation -->
+                <img class="w-84 h-60 lg:w-90 h-90 relative z-10" src="./assets/hero-circle.png" alt="">
+
+                <!-- microphone creation -->
+                <div class="absolute inset-0 flex items-center justify-center z-20">
+                    <img class="h-40 lg:w-37" src="./assets/microphone.png" alt="">
+                </div>
+
+                 <!-- NEW banabo -->
+                <div class="absolute top-[10%] left-[80%] bg-cyan-200
+                text-black font-bold px-3 py-1 rounded-full shadow-lg z-50 animate-floor cursor-pointer">NEW</div>
+            </div>
+        </div>
+
+        <!-- text er jaiga -->
+    </section>
 
 </body>
 </html>
